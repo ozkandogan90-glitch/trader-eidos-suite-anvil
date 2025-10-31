@@ -1,0 +1,35 @@
+is_package: true
+container:
+  type: ColumnPanel
+  properties:
+    col_widths: '{}'
+components:
+- type: Label
+  name: app_title
+  properties:
+    text: Trader Eidos Suite
+    bold: true
+    font_size: 22
+- type: FlowPanel
+  name: nav_row
+  components:
+  - type: Button
+    name: dashboard_btn
+    properties:
+      text: Dashboard
+  - type: Button
+    name: rfs_btn
+    properties:
+      text: RFS
+  - type: Button
+    name: leaders_btn
+    properties:
+      text: Leaders
+  - type: Button
+    name: dna_btn
+    properties:
+      text: DNA
+- type: ColumnPanel
+  name: content_panel
+  properties:
+    col_widths: '{}'

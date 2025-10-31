@@ -1,0 +1,19 @@
+# Trader Eidos Suite - Anvil Skeleton Requirements
+# Version: 8.0.0
+
+# Core Anvil
+anvil-uplink>=2.0.0
+
+# Data Processing
+pandas>=1.3.0
+numpy>=1.21.0
+
+# Mock Data & Testing
+faker>=8.0.0
+
+# Utilities
+python-dateutil>=2.8.0
+
+# Future Backend Integration (to be installed when ready)
+# See UPLINK_BACKEND_INTEGRATION_GUIDE.md
+# trader-eidos-suite  # Not yet, installed separately

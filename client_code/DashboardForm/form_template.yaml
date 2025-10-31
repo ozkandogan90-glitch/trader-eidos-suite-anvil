@@ -1,0 +1,123 @@
+is_package: true
+container:
+  type: ColumnPanel
+  properties:
+    role: ''
+    col_widths: '{}'
+components:
+- type: Label
+  name: title_label
+  properties:
+    text: "\U0001F4CA Dashboard \u2013 Trader Eidos Suite"
+    bold: true
+    font_size: 20
+- type: FlowPanel
+  name: filters_row
+  properties:
+    role: ''
+  components:
+  - type: DropDown
+    name: country_dropdown
+    properties:
+      placeholder: Country
+  - type: DropDown
+    name: exchange_dropdown
+    properties:
+      placeholder: Exchange
+  - type: DropDown
+    name: index_sector_dropdown
+    properties:
+      placeholder: Index / Sector
+  - type: DropDown
+    name: timeframe_select
+    properties:
+      placeholder: Timeframe
+- type: FlowPanel
+  name: kpi_row
+  properties:
+    spacing: medium
+  components:
+  - type: ColumnPanel
+    name: kpi_regime
+    properties:
+      role: ''
+      border: '1px solid #eee'
+      background: '#fff'
+      col_widths: '{}'
+      spacing_above: small
+      spacing_below: small
+      padding: '10'
+    components:
+    - type: Label
+      name: regime_label
+      properties:
+        text: Market Regime
+        bold: true
+    - type: Label
+      name: regime_badge
+      properties:
+        text: "\u2014"
+  - type: ColumnPanel
+    name: kpi_trend
+    properties:
+      role: ''
+      border: '1px solid #eee'
+      background: '#fff'
+      padding: '10'
+    components:
+    - type: Label
+      name: trend_label
+      properties:
+        text: Trend Score
+        bold: true
+    - type: Label
+      name: trend_score_label
+      properties:
+        text: "\u2014"
+  - type: ColumnPanel
+    name: kpi_conf
+    properties:
+      role: ''
+      border: '1px solid #eee'
+      background: '#fff'
+      padding: '10'
+    components:
+    - type: Label
+      name: confidence_title
+      properties:
+        text: Confidence
+        bold: true
+    - type: Label
+      name: confidence_label
+      properties:
+        text: "\u2014"
+- type: ColumnPanel
+  name: market_overview_panel
+  properties:
+    border: '1px dashed #ddd'
+    padding: '12'
+  components:
+  - type: Label
+    name: market_overview_title
+    properties:
+      text: Market Overview
+      bold: true
+  - type: Label
+    name: market_overview_placeholder
+    properties:
+      text: Chart / Heatmap placeholder
+- type: ColumnPanel
+  name: leaders_panel
+  properties:
+    border: '1px dashed #ddd'
+    padding: '12'
+  components:
+  - type: Label
+    name: leaders_title
+    properties:
+      text: Leaders
+      bold: true
+  - type: Label
+    name: leaders_placeholder
+    properties:
+      text: Leaders table placeholder

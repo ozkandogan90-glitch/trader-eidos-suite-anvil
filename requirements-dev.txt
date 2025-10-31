@@ -1,0 +1,30 @@
+# Trader Eidos Suite - Development Requirements
+# Install with: pip install -r requirements-dev.txt
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
+pytest-asyncio>=0.20.0
+
+# Code Quality
+black>=22.0.0
+flake8>=4.0.0
+pylint>=2.15.0
+mypy>=0.990
+isort>=5.11.0
+
+# Pre-commit hooks
+pre-commit>=2.20.0
+
+# Documentation
+sphinx>=5.0.0
+sphinx-rtd-theme>=1.0.0
+
+# Development utilities
+ipython>=8.0.0
+ipdb>=0.13.0
+watchdog>=2.1.0
+
+# Linting & Formatting
+autopep8>=1.7.0
+yapf>=0.32.0

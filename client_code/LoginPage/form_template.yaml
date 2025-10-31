@@ -1,0 +1,33 @@
+is_package: true
+container:
+  type: ColumnPanel
+  properties:
+    col_widths: '{}'
+components:
+- type: Label
+  name: title_label
+  properties:
+    text: Sign in
+- type: TextBox
+  name: email_input
+  properties:
+    placeholder: Email
+- type: TextBox
+  name: password_input
+  properties:
+    placeholder: Password
+    hide_text: true
+- type: Button
+  name: login_button
+  properties:
+    text: Log in
+- type: Label
+  name: error_label
+  properties:
+    text: ''
+    foreground: red
+- type: Label
+  name: success_label
+  properties:
+    text: ''
+    foreground: green
